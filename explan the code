@@ -1,0 +1,37 @@
+First, to send emails using Python. You must use a dedicated electronic account.
+Steps.
+First, you must download the Quick Mailer library.
+
+How to download the Quick Mailer library 
+
+You can download the Quick Mailer library in two easy ways.
+
+Method 1 (from cmd command prompt)
+Go to the command prompt for search methods and type command prompt or cmd and then run it as an administrator. And then write the following command
+
+pip install quick-mailer 
+
+It will install them automatically and you can use them from your text editor.
+
+Second way
+Downloaded via Visual Studio Code
+Open the terminal and write the same command 
+
+pip install quick-mailer  
+
+Hence they will be installed automatically.
+
+the code 
+from mailer import Mailer
+my_mail = "write your email here your email"
+mypass = "enter your password for your email"
+send_to = "Write the email you want to send to "
+my_subject = "write the subject of your email"
+my_message = "Write the message you want to send"
+mail = Mailer(email=my_mail, password=mypass)
+mail.send(receiver=send_to ,subject=my_subject , message=my_message)
+
+Explanation of the code In the first line, the quick-mailer library was called, noting that the letter Capital was written for the word mailer. In the second line, a variable is defined with my_mail body, and the email to be sent from must be entered between the quotation marks, taking into account that there is no space between them. In the third line, a variable is defined as mypass, and the password for the e-mail must be written. In the fourth line, a variable with the name of send_to was defined, and here you must write the email to be sent to. In the fifth line, a variable is defined with the name of my_subject and here you write the address of your e-mail message. In the sixth line, a variable is defined as my_message and here the message for the e-mail is written. In the seventh line, a variable was defined as mail, and the function of the library was used, the (Mailer) function, taking into account the capital letters, and then a new parenthesis was opened and a special function was written for the library in the name of (email = ) and here the value must be a string, which we defined as the variable (my_mail) and then a comma and writing a special command for the library, which is the password (password) and we have put the variable for the password that was previously defined. In the eighth and final line  Previously. In the eighth and last line, a special function was used in the library, which is mail.send, and the future was written and we put the variable for the recipient or the e-mail to be sent to, and then we wrote the address and we put the variable for the address as well as the message. 
+
+The code can be shortened to only two lines!! 
+So that he wrote the values directly without using variables. But it was used to make it easier for the programmer
